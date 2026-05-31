@@ -1,1 +1,23 @@
 /* Add CSS Styling */
+
+
+/* any <p> element */
+p{
+    background-color: lightcoral;
+    font-family: Verdana, "DejaVu Sans",sans-serif;
+}
+/* anything with class="special" */
+.special {
+    font-size: 24px;
+}
+/* element with id="big" */
+#big {
+    color: blue;
+    font-size: 36px;
+}
+/* element with id="green" */
+#green {
+    background-color: lightgreen;
+    font-size: 24px;
+    font-weight: bold;
+}
