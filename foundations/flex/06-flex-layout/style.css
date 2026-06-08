@@ -5,6 +5,50 @@ body {
   margin: 0;
   overflow: hidden;
   font-family: Roboto, sans-serif;
+/*puts footer at bottom of elements*/
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+ul {
+/*remove bullets from list and clears pad and margin*/ 
+  list-style: none;
+  padding: 0px;
+  margin: 0px;
+}
+
+a {
+/*remove underline and blue text from links*/
+  text-decoration: none;
+  color: grey;
+}
+
+/*put footer and header in a row, push content to sides of screen, and adds pad around them*/
+.footer, .header{
+  display: flex;
+  justify-content: space-between;
+  padding: 12px;
+}
+
+/*changes footer background color*/
+.footer {
+  background-color:#eeeeee ;
+}
+
+/*put footer links on opposite sides of page and give gap in each pair*/
+.left-links, .right-links {
+  display: flex;
+  gap: 12px;
+}
+
+/*puts content div in flex column, centers it, and then centers the items inside, seperated elements with gap */
+.content{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
 }
 
 img {
@@ -16,6 +60,8 @@ button {
   border: none;
   border-radius: 8px;
   background: #eee;
+  /*add padding to button*/
+  padding: 8px 12px 8px 12px;
 }
 
 input {

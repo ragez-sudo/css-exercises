@@ -8,28 +8,28 @@ body {
   font-weight: 800;
 }
 
+.para {
+  font-size: 22px;
+}
+/* "para small-para" are both in this line, so small para needs to be last to not be overwritten by the "para" only style */
 .small-para {
   font-size: 14px;
   font-weight: 800;
 }
-
-.para {
-  font-size: 22px;
-}
-
-.confirm {
-  background: green;
-  color: white;
-  font-weight: bold;
-} 
 
 .button {
   background-color: rgb(255, 255, 255);
   color: rgb(0, 0, 0);
   font-size: 20px;
 }
+/* .button and .confirm are both in this line, so .confirm needs to go last to not be overwritten by .button */
+.confirm {
+  background: green;
+  color: white;
+  font-weight: bold;
+} 
 
-.child {
+.text.child {
   color: rgb(0, 0, 0);
   font-weight: 800;
   font-size: 14px;

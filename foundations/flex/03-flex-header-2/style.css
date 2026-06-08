@@ -12,6 +12,12 @@ body {
   background: white;
   border-bottom: 1px solid #ddd;
   box-shadow: 0 0 8px rgba(0,0,0,.1);
+/* sets flexbox */
+  display: flex;
+/* splits space between child divs */
+  justify-content: space-between;
+/* adds pad between border of header and content */
+  padding: 8px;
 }
 
 .profile-image {
@@ -41,8 +47,33 @@ a {
   /* this removes the line under our links */
   text-decoration: none;
   color: rebeccapurple;
+  
 }
 
 ul {
   list-style-type: none;
+/* sets diplay default flex(row) */
+  display: flex;
+/* clears default margin and padding for elements */
+  margin: 0px;
+  padding: 0px;
+/* sets space between elements to 16px */
+  gap: 16px;
+  
 }
+
+.left, .right {
+/* sets row as primary axis */
+  display: flex;
+/* aligns all items in container centered along cross-axis */
+  align-items: center;
+  gap: 16px;
+}
+
+/* .right {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin-left: auto;
+  gap: 16px;
+} */
